@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0B707"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bakground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/az"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sheti"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Barlig'i: "
+
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tiykargiBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tritri" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/vibr"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#E0B707"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_baseline_vibration_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="48dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/tiykargiBtn"
+        app:layout_constraintEnd_toStartOf="@id/tritri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
+        app:strokeColor="#B1880C"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tritri"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:backgroundTint="#E0B707"
+        android:text="33"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:cornerRadius="64dp"
+        app:layout_constraintBottom_toTopOf="@id/tiykargiBtn"
+        app:layout_constraintEnd_toStartOf="@id/devdev"
+        app:layout_constraintStart_toEndOf="@id/vibr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
+        app:strokeColor="#B1880C"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/devdev"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:backgroundTint="#E0B707"
+        android:text="99"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:cornerRadius="128dp"
+        app:layout_constraintBottom_toTopOf="@id/tiykargiBtn"
+        app:layout_constraintEnd_toStartOf="@id/infinity"
+        app:layout_constraintStart_toEndOf="@id/tritri"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
+        app:strokeColor="#B1880C"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/infinity"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E0B707"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_infinity"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="56dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/tiykargiBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/devdev"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
+        app:strokeColor="#B1880C"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tiykargiBtn"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#00ffffff"
+        android:text="0"
+        android:shadowColor="#00ffffff"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/restart"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="#E0B707"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_baseline_refresh_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="84dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tiykargiBtn"
+        app:strokeColor="#B1880C"
+        app:strokeWidth="5dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
